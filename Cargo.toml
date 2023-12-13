@@ -1,0 +1,17 @@
+[package]
+name = "platform-millis-arduino-nano"
+version = "0.1.0"
+edition = "2021"
+description = "Specific millis reslization for arduino nano platform"
+license = "MIT"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+platform-millis = { git = "https://github.com/boshtannik/platform-millis.git" }
+avr-device = "0.5.1"
+
+[dependencies.arduino-hal]
+git = "https://github.com/rahix/avr-hal"
+rev = "7dfa6d322b9df98b2d98afe0e14a97afe0187ac1"
+features = ["arduino-nano"]
