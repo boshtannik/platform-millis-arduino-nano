@@ -20,7 +20,7 @@ const TIMER_COUNTS: ms = 125;
 
 const MILLIS_INCREMENT: ms = PRESCALER * TIMER_COUNTS / 16000;
 
-pub static MILLIS_COUNTER: avr_device::interrupt::Mutex<cell::Cell<ms>> =
+static MILLIS_COUNTER: avr_device::interrupt::Mutex<cell::Cell<ms>> =
     avr_device::interrupt::Mutex::new(cell::Cell::new(0));
 
 #[avr_device::interrupt(atmega328p)]
