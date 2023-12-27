@@ -1,6 +1,6 @@
 [package]
 name = "platform-millis-arduino-nano"
-version = "0.1.0"
+version = "1.0.0"
 edition = "2021"
 description = "Specific millis reslization for arduino nano platform"
 license = "MIT"
