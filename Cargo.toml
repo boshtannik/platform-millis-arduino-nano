@@ -3,12 +3,17 @@ name = "platform-millis-arduino-nano"
 version = "1.0.0"
 edition = "2021"
 description = "Specific millis reslization for arduino nano platform"
-license = "MIT"
+authors = ["Yevhen Shevchenko (boshtannik) <boshtannik@gmail.com>"]
+readmme = "README.md"
+repository = "https://github.com/boshtannik/platform-millis-arduino-nano"
+license-file = "LICENSE"
+keywords = ["embedded-nano-mesh", "platform", "millis"]
+categories = ["embedded", "no-std", "date-and-time"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-platform-millis = { git = "https://github.com/boshtannik/platform-millis.git" }
+platform-millis = "1.0.0"
 avr-device = "0.5.1"
 
 [dependencies.arduino-hal]
