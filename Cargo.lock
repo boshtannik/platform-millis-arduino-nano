@@ -121,12 +121,13 @@ checksum = "de3145af08024dea9fa9914f381a17b8fc6034dfb00f3a84013f7ff43f29ed4c"
 
 [[package]]
 name = "platform-millis"
-version = "0.1.0"
-source = "git+https://github.com/boshtannik/platform-millis.git#7eb7c58e7842144acf3b365b06ecf5f2a90e64ad"
+version = "1.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c9e3a5c33187b4e7b81312b4a9d13db713ce98afb292b893d074cc585aa296b8"
 
 [[package]]
 name = "platform-millis-arduino-nano"
-version = "0.1.0"
+version = "1.0.0"
 dependencies = [
  "arduino-hal",
  "avr-device",
