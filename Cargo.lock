@@ -121,9 +121,9 @@ checksum = "de3145af08024dea9fa9914f381a17b8fc6034dfb00f3a84013f7ff43f29ed4c"
 
 [[package]]
 name = "platform-millis"
-version = "1.0.0"
+version = "2.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c9e3a5c33187b4e7b81312b4a9d13db713ce98afb292b893d074cc585aa296b8"
+checksum = "384462e0dea55a2f535d6008c8656941928c0a84ee80e4b32cd26177a22a789f"
 
 [[package]]
 name = "platform-millis-arduino-nano"

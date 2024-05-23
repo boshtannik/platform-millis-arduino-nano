@@ -2,7 +2,7 @@
 #![feature(abi_avr_interrupt)]
 use core::cell;
 pub use platform_millis::ms;
-pub use platform_millis::PlatformTime;
+pub use platform_millis::PlatformMillis;
 
 // Possible Values:
 //
@@ -52,9 +52,9 @@ pub fn init_timer(timer: arduino_hal::pac::TC0) {
     unsafe { avr_device::interrupt::enable() };
 }
 
-pub struct Atmega328pTime;
+pub struct Atmega328pMillis;
 
-impl PlatformTime for Atmega328pTime {
+impl PlatformMillis for Atmega328pMillis {
     fn millis() -> ms {
         avr_device::interrupt::free(|cs| MILLIS_COUNTER.borrow(cs).get())
     }

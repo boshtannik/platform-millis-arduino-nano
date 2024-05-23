@@ -13,7 +13,7 @@ categories = ["embedded", "no-std", "date-and-time"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-platform-millis = "1.0.0"
+platform-millis = "2.0.0"
 avr-device = "0.5.3"
 
 [dependencies.arduino-hal]
